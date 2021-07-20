@@ -18,6 +18,9 @@
 		7C780A3B26A6DEF6009C50FB /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C780A3A26A6DEF6009C50FB /* ApiService.swift */; };
 		7C780A3D26A6DF26009C50FB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C780A3C26A6DF26009C50FB /* ViewModel.swift */; };
 		7C780A3F26A6E20E009C50FB /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C780A3E26A6E20E009C50FB /* MovieTableViewCell.swift */; };
+		7C780A4126A6EDB0009C50FB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C780A4026A6EDB0009C50FB /* DetailViewController.swift */; };
+		7C780A4626A6F756009C50FB /* WatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C780A4526A6F756009C50FB /* WatchViewController.swift */; };
+		7C780A4826A6F85C009C50FB /* WatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C780A4726A6F85C009C50FB /* WatchTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		7C780A3A26A6DEF6009C50FB /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		7C780A3C26A6DF26009C50FB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		7C780A3E26A6E20E009C50FB /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		7C780A4026A6EDB0009C50FB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7C780A4526A6F756009C50FB /* WatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchViewController.swift; sourceTree = "<group>"; };
+		7C780A4726A6F85C009C50FB /* WatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,20 +72,47 @@
 		7C780A2126A6D54E009C50FB /* MovieManagerApp */ = {
 			isa = PBXGroup;
 			children = (
+				7C780A4426A6F72F009C50FB /* ViewModel */,
+				7C780A4326A6F718009C50FB /* Controller */,
+				7C780A4226A6F708009C50FB /* Service */,
 				7C780A2226A6D54E009C50FB /* AppDelegate.swift */,
 				7C780A2426A6D54E009C50FB /* SceneDelegate.swift */,
-				7C780A2626A6D54E009C50FB /* ViewController.swift */,
 				7C780A2826A6D54E009C50FB /* Main.storyboard */,
 				7C780A2B26A6D54F009C50FB /* Assets.xcassets */,
 				7C780A2D26A6D54F009C50FB /* LaunchScreen.storyboard */,
 				7C780A3026A6D54F009C50FB /* Info.plist */,
-				7C780A3626A6DBD7009C50FB /* SearchViewController.swift */,
-				7C780A3826A6DEC3009C50FB /* Model.swift */,
-				7C780A3A26A6DEF6009C50FB /* ApiService.swift */,
-				7C780A3C26A6DF26009C50FB /* ViewModel.swift */,
-				7C780A3E26A6E20E009C50FB /* MovieTableViewCell.swift */,
 			);
 			path = MovieManagerApp;
+			sourceTree = "<group>";
+		};
+		7C780A4226A6F708009C50FB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7C780A3A26A6DEF6009C50FB /* ApiService.swift */,
+				7C780A3826A6DEC3009C50FB /* Model.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7C780A4326A6F718009C50FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7C780A4026A6EDB0009C50FB /* DetailViewController.swift */,
+				7C780A3E26A6E20E009C50FB /* MovieTableViewCell.swift */,
+				7C780A2626A6D54E009C50FB /* ViewController.swift */,
+				7C780A3626A6DBD7009C50FB /* SearchViewController.swift */,
+				7C780A4526A6F756009C50FB /* WatchViewController.swift */,
+				7C780A4726A6F85C009C50FB /* WatchTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7C780A4426A6F72F009C50FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7C780A3C26A6DF26009C50FB /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,12 +186,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C780A4126A6EDB0009C50FB /* DetailViewController.swift in Sources */,
 				7C780A3926A6DEC3009C50FB /* Model.swift in Sources */,
 				7C780A2726A6D54E009C50FB /* ViewController.swift in Sources */,
 				7C780A3B26A6DEF6009C50FB /* ApiService.swift in Sources */,
 				7C780A2326A6D54E009C50FB /* AppDelegate.swift in Sources */,
 				7C780A2526A6D54E009C50FB /* SceneDelegate.swift in Sources */,
+				7C780A4626A6F756009C50FB /* WatchViewController.swift in Sources */,
 				7C780A3726A6DBD7009C50FB /* SearchViewController.swift in Sources */,
+				7C780A4826A6F85C009C50FB /* WatchTableViewCell.swift in Sources */,
 				7C780A3F26A6E20E009C50FB /* MovieTableViewCell.swift in Sources */,
 				7C780A3D26A6DF26009C50FB /* ViewModel.swift in Sources */,
 			);
