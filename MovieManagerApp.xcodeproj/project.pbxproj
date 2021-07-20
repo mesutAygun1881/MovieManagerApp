@@ -17,6 +17,7 @@
 		7C780A3926A6DEC3009C50FB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C780A3826A6DEC3009C50FB /* Model.swift */; };
 		7C780A3B26A6DEF6009C50FB /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C780A3A26A6DEF6009C50FB /* ApiService.swift */; };
 		7C780A3D26A6DF26009C50FB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C780A3C26A6DF26009C50FB /* ViewModel.swift */; };
+		7C780A3F26A6E20E009C50FB /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C780A3E26A6E20E009C50FB /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		7C780A3826A6DEC3009C50FB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		7C780A3A26A6DEF6009C50FB /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		7C780A3C26A6DF26009C50FB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		7C780A3E26A6E20E009C50FB /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				7C780A3826A6DEC3009C50FB /* Model.swift */,
 				7C780A3A26A6DEF6009C50FB /* ApiService.swift */,
 				7C780A3C26A6DF26009C50FB /* ViewModel.swift */,
+				7C780A3E26A6E20E009C50FB /* MovieTableViewCell.swift */,
 			);
 			path = MovieManagerApp;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				7C780A2326A6D54E009C50FB /* AppDelegate.swift in Sources */,
 				7C780A2526A6D54E009C50FB /* SceneDelegate.swift in Sources */,
 				7C780A3726A6DBD7009C50FB /* SearchViewController.swift in Sources */,
+				7C780A3F26A6E20E009C50FB /* MovieTableViewCell.swift in Sources */,
 				7C780A3D26A6DF26009C50FB /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
