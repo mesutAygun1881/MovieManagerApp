@@ -72,14 +72,11 @@
 		7C780A2126A6D54E009C50FB /* MovieManagerApp */ = {
 			isa = PBXGroup;
 			children = (
+				7CEEC59426A759720004ABB2 /* Research */,
+				7CEEC59326A7595E0004ABB2 /* Model */,
 				7C780A4426A6F72F009C50FB /* ViewModel */,
 				7C780A4326A6F718009C50FB /* Controller */,
 				7C780A4226A6F708009C50FB /* Service */,
-				7C780A2226A6D54E009C50FB /* AppDelegate.swift */,
-				7C780A2426A6D54E009C50FB /* SceneDelegate.swift */,
-				7C780A2826A6D54E009C50FB /* Main.storyboard */,
-				7C780A2B26A6D54F009C50FB /* Assets.xcassets */,
-				7C780A2D26A6D54F009C50FB /* LaunchScreen.storyboard */,
 				7C780A3026A6D54F009C50FB /* Info.plist */,
 			);
 			path = MovieManagerApp;
@@ -89,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				7C780A3A26A6DEF6009C50FB /* ApiService.swift */,
-				7C780A3826A6DEC3009C50FB /* Model.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -113,6 +109,26 @@
 				7C780A3C26A6DF26009C50FB /* ViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7CEEC59326A7595E0004ABB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C780A3826A6DEC3009C50FB /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7CEEC59426A759720004ABB2 /* Research */ = {
+			isa = PBXGroup;
+			children = (
+				7C780A2D26A6D54F009C50FB /* LaunchScreen.storyboard */,
+				7C780A2B26A6D54F009C50FB /* Assets.xcassets */,
+				7C780A2826A6D54E009C50FB /* Main.storyboard */,
+				7C780A2426A6D54E009C50FB /* SceneDelegate.swift */,
+				7C780A2226A6D54E009C50FB /* AppDelegate.swift */,
+			);
+			path = Research;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
