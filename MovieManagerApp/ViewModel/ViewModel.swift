@@ -30,6 +30,7 @@ class MovieViewModel {
         
     }
     
+    //numberrow ve cellfor burada formatliyoruz
     func numberOfRowsInSection(section : Int) -> Int {
         if popularMovies.count != 0 {
             return popularMovies.count

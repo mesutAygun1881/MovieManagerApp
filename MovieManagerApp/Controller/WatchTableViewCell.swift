@@ -8,22 +8,28 @@
 import UIKit
 
 class WatchTableViewCell: UITableViewCell {
-    private var urlString : String = ""
+   
     
     @IBOutlet weak var imageWatch: UIImageView!
-    
     @IBOutlet weak var labelWatch: UILabel!
+    
+    private var urlString : String = ""
+    
+    
     func setCellWithValuesOf ( movie: Movie) {
-           
-        updateUI(title: movie.title , poster : movie.posterImage)
+           updateUI(title: movie.title , poster : movie.posterImage)
        }
+    
        
     private func updateUI(title: String? , poster : String?) {
-           
-       
+        
+        //title
            self.labelWatch.text = title
         
-        guard let posterString = poster else {return}
+        //image
+            guard let posterString = poster else {return}
+        
+        //jsondan cektigimiz jpg uzantiyi ekliyoruz
                urlString = "https://image.tmdb.org/t/p/w300" + posterString
                 
                 guard let posterImageUrl  = URL(string: urlString) else {
@@ -33,6 +39,8 @@ class WatchTableViewCell: UITableViewCell {
                 self.imageWatch.image = nil
                 getImageDataFrom(url: posterImageUrl)
        }
+    
+    //image i cekiyoruz
     func getImageDataFrom(url : URL) {
            URLSession.shared.dataTask(with: url) { (data , response , error) in
                if let error = error {
